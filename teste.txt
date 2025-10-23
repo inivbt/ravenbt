@@ -1,0 +1,11 @@
+local function getPlayerPos()
+  local player = g_game.getLocalPlayer()
+  if not player then return end
+  return player:getPosition()
+end
+
+
+local pos = getPlayerPos()
+print(pos.x)
+print(pos.y)
+print(pos.z)
